@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { ROUTE_PATH, isParentRoute, routes } from "@/routes";
 
 interface ItemPageProps {
   params: {
@@ -11,9 +14,14 @@ const ItemPage: React.FC<ItemPageProps> = ({ params, searchParams }) => {
   // localhost:3000/a/b/c?name=1&age=2
   // params: { item: ['a','b','c']},
   // searchParams: { name: '1', p: '2'}
-  const path = ["", ...params.item].join("/");
-  console.log(path);
-  return <div>Item Page {path}</div>;
+  const path = ["", ...params.item].join("/") as ROUTE_PATH;
+  const route = routes[path];
+
+  if (!route || isParentRoute(route)) return null;
+
+  const { children: Component } = route;
+
+  return Component ? <Component /> : null;
 };
 
 export default ItemPage;
