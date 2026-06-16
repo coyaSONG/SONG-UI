@@ -1,3 +1,5 @@
+"use client";
+
 import VanillaWrapper from "../vanillaWrapper";
 
 const initiator = (wrapper: HTMLDivElement) => {

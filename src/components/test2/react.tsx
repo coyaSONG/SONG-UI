@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 const Test2_React = () => {
