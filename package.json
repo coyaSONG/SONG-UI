@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "next": "^15.5.19",
+    "next": "^16.2.10",
     "postcss": "8.5.16",
     "react": "^18",
     "react-dom": "^18",
