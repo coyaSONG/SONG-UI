@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.5.1",
-    "next": "^15.5.19",
+    "next": "^16.2.10",
     "postcss": "8.5.16",
     "react": "^18",
     "react-dom": "^18",
