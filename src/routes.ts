@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import Test1 from "./components/test1/";
 import Test2_Vanilla from "./components/test2/vanilla";
 import Test2_React from "./components/test2/react";
